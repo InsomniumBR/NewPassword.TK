@@ -21,4 +21,4 @@ We wont' sell your info! We won't charge you for using our product. This project
 
 **And a lot more features coming soon!**
 
-[You can access NewPassword.tk clicking here!](http://newpassword.tk)
+[You can access NewPassword.tk clicking here!](http://www.newpassword.tk)
