@@ -1,84 +1,97 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--	SEO START	-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Generate strong passwords!" />
-    <meta property="og:description" content="Generate strong passwords!" />
+    <meta name="description" content="Tool for generation of strong word-based passwords." />
+    <meta name="keywords" content="password,word,customizable,capitalization,camelcase,camel,case,upper,lower,uppercase,lowercase,symbols,numbers,generator,random" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="www.newpassword.tk">
+    <meta property="og:title" content="New Password TK">
+    <meta property="og:site_name" content="New Password TK">
+    <meta property="og:description" content="Tool for generation of strong word-based passwords." />
+    <meta property="og:type" content="website">
+    <!--	SEO END	-->
     <title>New Password TK</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
-    <link href="css/main.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet" />
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-    <script src="js/interface.js"></script>
-    <script src="js/main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-2485773310935623",
+            enable_page_level_ads: true
+        });
+    </script>
 </head>
-<body>
+<body class="jumbotron">
     <div class="container-fluid pwd-container">
-        <div class="jumbotron">
-            <div class="row pwd-header" style="text-align:center">
-                <span>Password Generator</span>
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="input-group">
-                        <span class="input-group-addon">Number of words</span>
-                        <input type="number" class="form-control" value="2" id="wordQuantity" />
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon">Word size (chars)</span>
-                        <input type="number" class="form-control" value="5" id="lengthFrom" />
-                        <span class="input-group-addon">to</span>
-                        <input type="number" class="form-control" value="9" id="lengthTo" />
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon">Capitalization Strategy</span>
-                        <select class="form-control" id="capitalizationSelect">
-                            <option value="random">rANdOm</option>
-                            <option value="camelcase" selected>CamelCase</option>
-                            <option value="upper">UPPERCASE</option>
-                            <option value="lower">lowercase</option>
-                        </select>
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" id="checkboxSymbol" data-toggle="toggle" data-size="mini" />
-                        </span>
-                        <span class="input-group-addon">Add Symbols</span>
-                        <input class="form-control" disabled/>
-                    </div>
-                    <div id="hidenSymbolsMenu">
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <input type="radio" id="radioSymbolUserDefined" name="radioSymbol" value="userDefined" checked />
-                            </span>
-                            <span class="input-group-addon"> Give me this symbols!</span>
-                            <input id="addSymbolsInput" type="text" value="@,!,-,_,$" class="form-control" style="border:0"/>
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <input type="radio" id="radioSymbolSystemDefined" name="radioSymbol" value="systemDefined" />
-                            </span>
-                            <span class="input-group-addon"> Show me what you got!</span>
-                            <input type="text" class="form-control" disabled />
-                        </div>
-                    </div>
-                    <div class="input-group" id="addNumbersLocation">
-                        <span class="input-group-addon">
-                            <input type="checkbox" id="checkboxNumbers" checked data-toggle="toggle" data-size="mini" />
-                        </span>
-                        <span class="input-group-addon">Add numbers</span>
-                        <input id="addNumbersInput" class="form-control" type="number" value="2" style="border:0" />
-                    </div>
-                    <button class="btn btn-danger btn-block" id="generateButton" onclick="generatePassword()">Generate</button>
-                    <div class="alert alert-success pwd-result" role="alert" id="generatedContent"></div>
-                    <div id="passwordProgress" class="alert alert-warning" style="display:none"></div>
+        <div class="row pwd-header">
+            <span>Password Generator</span>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="input-group">
+                    <span class="input-group-addon">Number of words</span>
+                    <input type="number" class="form-control" value="2" id="wordQuantity" />
                 </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Word size (chars)</span>
+                    <input type="number" class="form-control" value="5" id="lengthFrom" />
+                    <span class="input-group-addon">to</span>
+                    <input type="number" class="form-control" value="9" id="lengthTo" />
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Capitalization Strategy</span>
+                    <select class="form-control" id="capitalizationSelect">
+                        <option value="random">rANdOm</option>
+                        <option value="camelcase" selected>CamelCase</option>
+                        <option value="upper">UPPERCASE</option>
+                        <option value="lower">lowercase</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="checkbox" id="checkboxSymbol" data-toggle="toggle" data-size="mini" onclick="symbolChange()" />
+                    </span>
+                    <span class="input-group-addon">Add Symbols</span>
+                    <input class="form-control borderless" disabled />
+                </div>
+                <div id="hidenSymbolsMenu">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="radio" id="radioSymbolUserDefined" name="radioSymbol" value="userDefined" checked />
+                        </span>
+                        <span class="input-group-addon"> Give me this symbols!</span>
+                        <input id="addSymbolsInput" type="text" value="@,!,-,_,$" class="form-control borderless" />
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="radio" id="radioSymbolSystemDefined" name="radioSymbol" value="systemDefined" />
+                        </span>
+                        <span class="input-group-addon"> Show me what you got!</span>
+                        <input type="text" class="form-control" disabled />
+                    </div>
+                </div>
+                <div class="input-group" id="addNumbersLocation">
+                    <span class="input-group-addon">
+                        <input type="checkbox" id="checkboxNumbers" checked data-toggle="toggle" data-size="mini" />
+                    </span>
+                    <span class="input-group-addon">Add numbers</span>
+                    <input id="addNumbersInput" class="form-control borderless" type="number" value="2" />
+                </div>
+                <button class="btn btn-danger btn-block" id="generateButton" onclick="generatePassword()">Generate</button>
+                <div class="alert alert-success pwd-result" role="alert" id="generatedContent"></div>
+                <div id="passwordProgress" class="alert alert-warning"></div>
             </div>
         </div>
     </div>
+    <link async href="bootstrap.min.css" rel="stylesheet" />
+    <link async href="bootstrap-theme.min.css" rel="stylesheet" />
+    <link async href="bootstrap-toggle.min.css" rel="stylesheet" />
+    <script src="jquery-3.2.1.min.js"></script>
+    <script async src="bootstrap.min.js"></script>
+    <script async src="bootstrap-toggle.min.js"></script>
+    <script async src="interface.js"></script>
+    <script async src="main.js"></script>
+    <link async href="main.css" rel="stylesheet" />
+    <link async href="fonts/Orbitron.css" rel="stylesheet" />
 </body>
 </html>

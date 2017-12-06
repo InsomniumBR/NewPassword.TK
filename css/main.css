@@ -8,6 +8,7 @@
 .pwd-header {
     font-size: xx-large;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .jumbotron {
@@ -18,5 +19,9 @@
     display: none;
     margin-top: 40px;
     text-align: center;
-    font-size:x-large;
+    font-size: x-large;
+}
+
+#passwordProgress {
+    display: none;
 }
