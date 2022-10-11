@@ -1,4 +1,4 @@
-## NewPassword.TK
+## Smart IT Password Generator
 
 A word-based password generator, the *NewPassword.TK* project was made with an objective of creating a world free of weak passwords.
 
@@ -21,4 +21,4 @@ We wont' sell your info! We won't charge you for using our product. This project
 
 **And a lot more features coming soon!**
 
-[You can access NewPassword.tk clicking here!](http://www.newpassword.tk)
+[You can access Smart IT Password Generator clicking here!](https://password.smartit.com.br/)
